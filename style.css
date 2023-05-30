@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  color: hsl(192, 100%, 9%);
+}
+
+p {
+  color: hsl(208, 11%, 55%);
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  padding: 1rem 5.5rem;
+  border-radius: 25px;
+  background: hsl(322, 100%, 66%);
+  border: transparent;
+  color: white;
+  font-size: 0.85rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/*HEADER SECTION*/
+.nav-img {
+  height: 25px;
+  width: 150px;
+}
+.nav-btn {
+  padding: 0.5rem 2rem;
+  background: white;
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  border-radius: 25px;
+  border: transparent;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
+}
+.nav-btn:hover {
+  opacity: 0.7;
+}
+
+.navbar {
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 6rem;
+}
+
+.header-info {
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.header-info h1 {
+  margin: 2rem;
+  font-size: 2rem;
+}
+.header-info p {
+  margin-bottom: 2rem;
+  padding: 0 2.2rem;
+  font-size: 1.2rem;
+}
+
+.header-img {
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+.header-image {
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 1170px) {
+  .nav-btn {
+    padding: 0.5rem 3rem;
+  }
+  .header-section {
+    padding: 1rem 3rem;
+    max-height: 80vh;
+    margin-bottom: 10rem;
+  }
+  .header-container {
+    display: grid;
+    grid-template-columns: 650px auto;
+    align-items: center;
+  }
+  .header-info {
+    margin: 0;
+    text-align: start;
+  }
+  .header-info h1 {
+    font-size: 2.5rem;
+    margin-left: 0;
+    padding-right: 2rem;
+  }
+  .header-info p {
+    padding: 0;
+  }
+  .header-image {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*MAIN STUFF*/
+
+.single-page {
+  margin: 4rem auto;
+  max-width: 85vw;
+  padding: 4rem 2rem;
+  padding-bottom: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0px 0px 8px 5px rgba(217, 213, 217, 0.25);
+}
+
+@media screen and (min-width: 1170px) {
+  .single-page {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: 6rem;
+    padding-bottom: 4rem;
+  }
+  .page-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .page-info p {
+    text-align: left;
+    padding-left: 4rem;
+    padding-right: 2.5rem;
+    font-size: 2rem;
+  }
+  .page-info h2 {
+    text-align: left;
+    padding-left: 6rem;
+  }
+}
+
+/*FIRST CARD*/
+
+.page-img {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.page-info {
+  margin: 2rem 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.page-info h2 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+.page-info p {
+  line-height: 25px;
+  font-size: 1.1rem;
+  margin: 0 2rem;
+}
+
+/*SECOND CARD*/
+
+.second-page p {
+  margin: 0 1.5rem;
+}
+
+@media screen and (min-width: 1170px) {
+  .second-page {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+  .second-page-img {
+    padding-left: 6rem;
+    padding-right: 4.5rem;
+  }
+
+  .second-page-info p {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-right: 0.75rem;
+  }
+  .second-page-info h2 {
+    text-align: left;
+    padding-left: 0;
+  }
+}
+/*THIRD PAGE*/
+
+.third-page-info p {
+  margin: 0 1.5rem;
+}
+@media screen and (min-width: 1170px) {
+  .third-page-info p {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+/*FOOTER*/
+
+/*Main footer CSS*/
+
+footer {
+  background: hsl(192, 100%, 9%);
+  padding-top: 8.5rem;
+}
+@media screen and (min-width: 1170px) {
+  footer {
+    padding-left: 6rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 550px 1fr 1fr;
+  }
+  .info-container p {
+    margin-right: 2rem;
+  }
+
+  .second-ft-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    column-gap: 4rem;
+    align-items: center;
+  }
+  .second-ft-div a {
+    margin-top: 6rem;
+  }
+}
+footer p {
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.icon-img {
+  width: 20px;
+  height: 25px;
+}
+.ft-img {
+  filter: brightness(0) invert(1);
+  height: 35px;
+  width: 80%;
+}
+.logo-image {
+  width: 270px;
+}
+@media screen and (min-width: 1170px) {
+  .ft-img {
+    width: 100%;
+  }
+}
+
+/*Rest of footer CSS*/
+
+.first-ft-div {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+.info-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+.info-container p {
+  font-size: 1.1rem;
+  padding-right: 2.5rem;
+}
+
+.second-ft-div {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+.second-ft-div a {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+.second-ft-div a:hover {
+  text-decoration: underline;
+}
+
+.third-ft-div {
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+@media screen and (min-width: 1170px) {
+  .third-ft-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-links {
+    margin-right: 4.5rem;
+    margin-top: 4.5rem;
+    margin-bottom: 10rem;
+  }
+  .third-ft-div p {
+    margin-left: 3.75rem;
+  }
+}
+.third-ft-div a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.third-ft-div a:hover {
+  color: hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
+}
+
+.third-ft-div i {
+  transform: translateY(50%);
+}
+
+.third-ft-div p {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}
+
+/*EXTRA BUTTON*/
+
+.extra-div {
+  width: 450px;
+  padding: 3rem 0.25rem;
+
+  margin: 1rem auto;
+  text-align: center;
+  box-shadow: 0px 0px 8px 5px rgba(217, 213, 217, 0.25);
+  border-radius: 20px;
+  background: white;
+  transform: translateY(50%);
+}
+.extra-div h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1170px) {
+  .extra-div {
+    width: 800px;
+  }
+  .extra-div h1 {
+    padding-top: 2rem;
+    font-size: 1.75rem;
+  }
+}
